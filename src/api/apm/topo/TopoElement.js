@@ -21,5 +21,5 @@ class TopoElementService extends BaseService {
     }
   }
 }
-TopoElementService.baseUrlPrefix = '/api/uniapm/topo/topoElement'
+TopoElementService.baseUrlPrefix = '/api-uniapm/uniapm/topo/topoElement'
 export { TopoElementService }

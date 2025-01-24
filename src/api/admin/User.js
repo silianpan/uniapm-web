@@ -167,5 +167,5 @@ class UserService extends BaseService {
     }
   }
 }
-UserService.baseUrlPrefix = '/api/admin/user'
+UserService.baseUrlPrefix = '/api-uniapm/admin/user'
 export { UserService }

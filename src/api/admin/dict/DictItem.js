@@ -28,5 +28,5 @@ class DictItemService extends BaseService {
     }
   }
 }
-DictItemService.baseUrlPrefix = '/api/admin/dict/dictItem'
+DictItemService.baseUrlPrefix = '/api-uniapm/admin/dict/dictItem'
 export { DictItemService }

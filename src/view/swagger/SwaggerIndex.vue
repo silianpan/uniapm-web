@@ -66,7 +66,7 @@ export default {
     },
     async import(rebuildData) {
       // for (let key in rebuildData) {
-      //   await api.post('/api/admin/module/import/api', rebuildData[key])
+      //   await api.post('/api-uniapm/admin/module/import/api', rebuildData[key])
       // }
     }
   },

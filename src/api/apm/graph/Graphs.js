@@ -105,5 +105,5 @@ class GraphsService extends BaseService {
     }
   }
 }
-GraphsService.baseUrlPrefix = '/api/zabbix/graph/graphs'
+GraphsService.baseUrlPrefix = '/api-uniapm/zabbix/graph/graphs'
 export { GraphsService }

@@ -8,5 +8,5 @@ import { BaseService } from '@/api/base-service'
  * @extends {BaseService}
  */
 class AuthClientService extends BaseService {}
-AuthClientService.baseUrlPrefix = '/api/auth/client'
+AuthClientService.baseUrlPrefix = '/api-uniapm/auth/client'
 export { AuthClientService }

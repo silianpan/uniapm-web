@@ -8,5 +8,5 @@ import { BaseService } from '@/api/base-service'
  * @extends {BaseService}
  */
 class ResourceAuthorityService extends BaseService {}
-ResourceAuthorityService.baseUrlPrefix = '/api/admin/resourceAuthority'
+ResourceAuthorityService.baseUrlPrefix = '/api-uniapm/admin/resourceAuthority'
 export { ResourceAuthorityService }

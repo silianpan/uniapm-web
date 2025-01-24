@@ -10,14 +10,14 @@ import api from '@/libs/api'
  */
 class AuthService extends BaseService {
   static async getClients(id) {
-    const url = '/api/auth/service/' + id + '/client'
+    const url = '/api-uniapm/auth/service/' + id + '/client'
     return api.get(url)
   }
 
   static async modifyClients(id, data) {
-    const url = '/api/auth/service/' + id + '/client'
+    const url = '/api-uniapm/auth/service/' + id + '/client'
     return api.put(url, data, true)
   }
 }
-AuthService.baseUrlPrefix = '/api/auth/service'
+AuthService.baseUrlPrefix = '/api-uniapm/auth/service'
 export { AuthService }

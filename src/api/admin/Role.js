@@ -8,5 +8,5 @@ import { BaseService } from '@/api/base-service'
  * @extends {BaseService}
  */
 class RoleService extends BaseService {}
-RoleService.baseUrlPrefix = '/api/admin/role'
+RoleService.baseUrlPrefix = '/api-uniapm/admin/role'
 export { RoleService }

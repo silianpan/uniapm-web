@@ -64,5 +64,5 @@ class ModuleService extends BaseService {
     }
   }
 }
-ModuleService.baseUrlPrefix = '/api/admin/module'
+ModuleService.baseUrlPrefix = '/api-uniapm/admin/module'
 export { ModuleService }

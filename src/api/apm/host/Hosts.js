@@ -105,5 +105,5 @@ class HostsService extends BaseService {
     }
   }
 }
-HostsService.baseUrlPrefix = '/api/zabbix/host/hosts'
+HostsService.baseUrlPrefix = '/api-uniapm/zabbix/host/hosts'
 export { HostsService }

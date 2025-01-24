@@ -8,5 +8,5 @@ import { BaseService } from '@/api/base-service'
  * @extends {BaseService}
  */
 class ModuleElementService extends BaseService {}
-ModuleElementService.baseUrlPrefix = '/api/admin/moduleElement'
+ModuleElementService.baseUrlPrefix = '/api-uniapm/admin/moduleElement'
 export { ModuleElementService }

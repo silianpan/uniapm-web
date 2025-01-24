@@ -8,5 +8,5 @@ import { BaseService } from '@/api/base-service'
  * @extends {BaseService}
  */
 class GateLogService extends BaseService {}
-GateLogService.baseUrlPrefix = '/api/admin/gateLog'
+GateLogService.baseUrlPrefix = '/api-uniapm/admin/gateLog'
 export { GateLogService }

@@ -21,5 +21,5 @@ class TopoService extends BaseService {
     }
   }
 }
-TopoService.baseUrlPrefix = '/api/uniapm/topo/topo'
+TopoService.baseUrlPrefix = '/api-uniapm/uniapm/topo/topo'
 export { TopoService }

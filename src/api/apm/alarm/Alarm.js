@@ -69,5 +69,5 @@ class AlarmService extends BaseService {
     }
   }
 }
-AlarmService.baseUrlPrefix = '/api/zabbix/alarm/problem'
+AlarmService.baseUrlPrefix = '/api-uniapm/zabbix/alarm/problem'
 export { AlarmService }

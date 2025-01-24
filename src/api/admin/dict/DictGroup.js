@@ -10,5 +10,5 @@ import { BaseService } from '@/api/base-service'
  * @extends {BaseService}
  */
 class DictGroupService extends BaseService {}
-DictGroupService.baseUrlPrefix = '/api/admin/dict/dictGroup'
+DictGroupService.baseUrlPrefix = '/api-uniapm/admin/dict/dictGroup'
 export { DictGroupService }

@@ -21,5 +21,5 @@ class BusinessService extends BaseService {
     }
   }
 }
-BusinessService.baseUrlPrefix = '/api/uniapm/business/business'
+BusinessService.baseUrlPrefix = '/api-uniapm/uniapm/business/business'
 export { BusinessService }

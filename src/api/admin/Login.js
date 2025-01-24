@@ -11,7 +11,7 @@ class LoginService {
    * @memberof LoginService
    */
   static async login({ username, password }) {
-    const url = '/api/auth/jwt/token'
+    const url = '/api-uniapm/auth/jwt/token'
     // TODO: 明文传输 待改
     const data = {
       username: username,
@@ -31,7 +31,7 @@ class LoginService {
    * @memberof LoginService
    */
   static async getUserInfo(token) {
-    const url = '/api/admin/user/front/info'
+    const url = '/api-uniapm/admin/user/front/info'
     return api.get(url, { token })
   }
 
@@ -46,7 +46,7 @@ class LoginService {
    * @memberof LoginService
    */
   static async getAuthorityMenus(token) {
-    const url = '/api/admin/user/front/menus'
+    const url = '/api-uniapm/admin/user/front/menus'
     return api.get(url, { token })
   }
 }

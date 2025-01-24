@@ -16,5 +16,5 @@ export default {
   /**
    * ueditor后台上传文件api服务
    */
-  ueditorServer: '/api/ueditor/ueditorUpload.do'
+  ueditorServer: '/api-uniapm/ueditor/ueditorUpload.do'
 }
