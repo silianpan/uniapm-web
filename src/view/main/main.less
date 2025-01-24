@@ -1,0 +1,129 @@
+.main {
+  // .header-radius{
+  //   border-radius: 0px 0px 100px 100px;
+  // }
+  .logo-con {
+    height: 64px;
+    padding: 10px;
+
+    img {
+      height: 44px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .tag-nav-wrapper {
+    padding: 0;
+    height: 40px;
+    background: #00152a;
+    overflow: hidden;
+  }
+
+  .header-con {
+    background: #1f4191;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .main-layout-con {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .main-content-con {
+    // height: ~"calc(100% - 60px)";
+    overflow: hidden;
+  }
+
+  .tag-nav-wrapper {
+    padding: 0;
+    height: 40px;
+    background: #00152a;
+  }
+
+  .content-wrapper {
+    padding: 18px;
+    height: ~"calc(100% - 80px)";
+    overflow: auto;
+  }
+  .content-scoll{
+    padding: 0;
+    overflow: auto;
+  }
+
+  .left-sider {
+    .ivu-layout-sider-children {
+      overflow-y: scroll;
+      margin-right: -18px;
+    }
+  }
+}
+
+.ivu-menu-item > i {
+  margin-right: 8px !important;
+}
+
+.ivu-menu-submenu > .ivu-menu > .ivu-menu-item > i {
+  margin-right: 8px !important;
+}
+
+.demo-spin-icon-load {
+  animation: ani-demo-spin 1s linear infinite;
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #2b85e4;
+  border-left-width: 5px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
+
+  &-small {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #2b85e4;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 6px;
+    border-left-width: 5px;
+    border-radius: 3px;
+
+  }
+
+  &-danger {
+    border-left-color: #ce4844;
+  }
+
+  &-warning {
+    border-left-color: #aa6708;
+  }
+
+  &-warning h4 {
+    color: #aa6708;
+  }
+
+  &-primary {
+    border-left-color: #2b85e4;
+
+    h4 {
+      color: #2b85e4;
+    }
+  }
+
+  &-info {
+    border-left-color: #1b809e;
+
+    h4 {
+      color: #1b809e;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .main .content-wrapper {
+    position: absolute;
+    top: 102px;
+    width: ~"calc(100% - 260px)";
+  }
+}

@@ -1,0 +1,344 @@
+@leftWidth: 450px;
+@rightWidth: 450px;
+@marginPage: 12px;
+@headerTopHeight: 79px;
+@lightColor: #00e9fe;
+@font-face {
+  font-family: 'titleFont';
+  src: url('topoIcon/zhsxrt.ttf');
+  /* IE9+,可以是具体的实际链接 */
+}
+
+.tpl_header {
+  height: 79px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: url(topoIcon/tplbg.png) no-repeat center;
+  & .logoText {
+    position: absolute;
+    width: 800px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -400px;
+    line-height: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2de9fb;
+    white-space: normal;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'titleFont';
+    background: url(topoIcon/fulllogo.png) no-repeat center;
+  }
+}
+
+.ledWrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #0a1942;
+  & .ledWrapperCenter {
+    left: @marginPage;
+    top: @headerTopHeight;
+    right: @marginPage;
+    bottom: 0;
+    position: absolute;
+    & .leftScreen {
+      width: @leftWidth;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    & .rightScreen {
+      width: @rightWidth;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+    & .centerScreen {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: @leftWidth + @marginPage;
+      right: @rightWidth + @marginPage;
+    }
+    & .topScreen {
+      width: 100%;
+      height: ~"calc(100% / 3 * 2 - 12px + 60px)";
+      margin-bottom: 12px;
+      overflow: auto;
+    }
+    & .boxScreen {
+      width: 100%;
+      position: relative;
+      height: ~"calc(100% / 3 - 12px)";
+      background-color: rgba(255, 255, 255, 0.05);
+      margin-bottom: @marginPage;
+      &:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-top: 2px solid #41abf6;
+        border-left: 2px solid #41abf6;
+        z-index: 9;
+      }
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-right: 2px solid #41abf6;
+        border-top: 2px solid #41abf6;
+        z-index: 9;
+      }
+      & .boxScreenCenter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        &:after {
+          content: '';
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-bottom: 2px solid #41abf6;
+          border-left: 2px solid #41abf6;
+          z-index: 9;
+        }
+        &:before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          border-right: 2px solid #41abf6;
+          border-bottom: 2px solid #41abf6;
+          z-index: 9;
+        }
+      }
+      & .titles {
+        height: 48px;
+        padding: 0 24px;
+        background-color: #1a2b3e;
+        position: relative;
+        & .names {
+          position: absolute;
+          display: inline-block;
+          top: 50%;
+          margin-top: -12px;
+          height: 24px;
+          line-height: 24px;
+          color: #eee;
+          font-size: 16px;
+        }
+      }
+      & .mychartBox {
+        margin: 0 18px;
+        position: absolute;
+        height: ~"calc(100% - 48px)";
+        width: ~"calc(100% - 36px)";
+        overflow: hidden;
+        & .swiper-container {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          & .swiper-wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+            & .swiper-slide {
+              position: relative;
+              height: 100%;
+            }
+          }
+        }
+        & .statisticsNumber {
+          padding: 12px 0;
+          border-bottom: 1px solid #1a2f4b;
+          font-size: 0;
+          display: block;
+          width: 100%;
+          & .halfBlock {
+            display: inline-block;
+            width: 50%;
+            color: #fff;
+            & .chartNumber {
+              display: inline-block;
+              width: 100%;
+              & .numbers {
+                display: inline-block;
+                font-size: 32px;
+                font-style: normal; //font-weight: 700;
+              }
+              & .inputNumber {
+                color: #00bd7d;
+              }
+              & .outNumber {
+                color: #00d8ff;
+              }
+              & .unit {
+                display: inline-block;
+                font-size: 14px;
+                font-style: normal;
+                color: #537097;
+                margin-left: 6px;
+              }
+            }
+            & .chartText {
+              width: 100%;
+              display: inline-block;
+              font-size: 14px;
+              color: #537097;
+              line-height: 16px;
+              padding-top: 8px;
+            }
+          }
+        }
+        & .chartBoxMain {
+          height: ~"calc(100% - 81px)";
+          font-size: 14px;
+          color: #fff;
+        }
+        & .chartsMains{
+          position: relative;
+          font-size: 14px;
+          height: 100%;
+        }
+      }
+      & .businessChartBox {
+        margin: 0 24px;
+        height: 348px;
+      }
+      & .hostChartBox {
+        margin: 0 24px;
+        height: 252px;
+      }
+      & .otherChartsBox {
+        margin: 0;
+      }
+    }
+    & .secondChild {
+      height: ~"calc(100% / 3 - 12px + 60px)";
+    }
+    & .lastChild {
+      height: ~"calc(100% / 3 - 12px - 60px)";
+    }
+  }
+  .clickUnderline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .hoverUnderline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.dataTable {
+  & tr {
+    color: #537097;
+    &:nth-child(2n) {
+      background-color: #0d2645;
+    }
+    &:nth-child(2n+1) {
+      & td {
+        white-space: nowrap;
+        & .topNumbers {
+          background-color: #ffad2b;
+        }
+      }
+    }
+    &:nth-child(3n+1) {
+      & td {
+        & .topNumbers {
+          background-color: #2990fd;
+        }
+      }
+    }
+    &:nth-child(4n+1) {
+      & td {
+        & .topNumbers {
+          background-color: #00b8a9;
+        }
+      }
+    }
+    &:nth-child(5n+1) {
+      & td {
+        & .topNumbers {
+          background-color: #20d177;
+        }
+      }
+    }
+    & td {
+      color: #fff;
+      text-align: left;
+      padding: 0 6px;
+      line-height: 30px;
+      & .topNumbers {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        border-radius: 2px;
+        background-color: #ee583a;
+      }
+      & .alarmType {
+        display: inline-block;
+        height: 18px;
+        padding: 0 6px;
+        line-height: 18px;
+        border-radius: 2px;
+        background-color: #ee583a;
+      }
+      & .leve_0 {
+        background-color: #BDBDBD;
+      }
+      & .leve_1 {
+        background-color: #ddcd01;
+      }
+      & .leve_2 {
+        background-color: #fdb933;
+      }
+      & .leve_3 {
+        background-color: #f08300;
+      }
+      & .leve_4 {
+        background-color: #e35020;
+      }
+      & .leve_5 {
+        background-color: #B71C1C;
+      }
+    }
+    &.header {
+      background-color: transparent;
+      & th {
+        color: #537097;
+        font-weight: normal;
+        line-height: 30px;
+        white-space: nowrap;
+        text-align: left;
+        padding: 0 6px;
+      }
+    }
+  }
+}

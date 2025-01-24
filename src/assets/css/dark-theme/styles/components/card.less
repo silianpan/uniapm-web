@@ -1,0 +1,58 @@
+@card-prefix-cls: ~"@{css-prefix}card";
+
+// .border{position:absolute;padding:5px;border-style: solid;border-color: #E3581D;}
+// .row1{border-width: 5px 0 0 5px;top:-5px;left:-5px;}
+// .row2{border-width: 5px 5px 0 0;top:-5px;right:-5px;}
+// .col1{border-width: 0 0 5px 5px;bottom:-5px;left:-5px;}
+// .col2{border-width: 0 5px 5px 0;bottom:-5px;right:-5px;}
+
+.@{card-prefix-cls} {
+  background: @card-bg;
+  border-radius: @border-radius-small;
+  font-size: @font-size-base;
+  position: relative;
+  //overflow: hidden;
+  transition: all @transition-time @ease-in-out;
+
+
+  &-bordered {
+    border: 1px solid @border-color-base;
+    border-color: @border-color-split;
+  }
+
+  &-shadow {
+    box-shadow: @shadow-card;
+  }
+
+  &:hover {
+    box-shadow: @shadow-base;
+    border-color: @card-bg-border-color-hover;
+  }
+
+  &&-dis-hover:hover {
+    box-shadow: none;
+    border-color: transparent;
+  }
+
+  &&-dis-hover&-bordered:hover {
+    border-color: @border-color-split;
+  }
+
+  &&-shadow:hover {
+    box-shadow: @shadow-card;
+  }
+
+  &-head {
+    .content-header;
+  }
+
+  &-extra {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+  }
+
+  &-body {
+    padding: 16px;
+  }
+}
